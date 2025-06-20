@@ -35,6 +35,9 @@ export const signUp=async (req,res)=>{
         //res.cookie(name,token,optional)
         res.cookie("token",token,{
             httpOnly:true,
+            secure: true,
+            sameSite: "None",
+            maxAge: 7 * 24 * 60 * 60 * 1000
             // maxAge: 7*24*60*60*1000 //By default the cookie remains till the browser is closed if the maxAge is not defined (1 session)
         })
 
