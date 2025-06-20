@@ -12,7 +12,7 @@ import userRouter from "./routes/user.routes.js"
 const app=express()
 //Accept fetch requets from frontend url
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:["http://localhost:5173","https://myvirtualassistant-frontend.onrender.com"],
     credentials:true
 }))
 const port=process.env.PORT || 5000
