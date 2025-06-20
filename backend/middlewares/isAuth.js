@@ -1,0 +1,22 @@
+//Middleware of get currrent user
+import jwt from "jsonwebtoken"
+
+const isAuth=async(req,res,next)=>{
+    try {
+        const token=req.cookies.token;
+        if(!token){
+            return res.send(400).json({message:"Token not found"})
+        }
+        //if token found, decode it to get the full object in verifyToken
+        const verifyToken=await jwt.verify(token, process.env.JWT_SECRET);
+        //store that user id in response object 
+        req.userId=verifyToken.userId;
+
+        next()
+    } catch (error) {
+        console.log(error);
+        return res.send(500).json({message:"Is Auth Error"})
+    }
+}
+
+export default isAuth

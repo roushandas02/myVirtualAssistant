@@ -1,0 +1,12 @@
+npm install express mongoose dotenv nodemon jsonwebtoken bcryptjs cookie-parser cloudinary multer
+npm i cors
+npm init
+npm i axios(to fetch gemini api)
+npm i moment (to display date time month etc..)
+
+cmd run as administrator
+mongod
+cmd normal
+mongosh
+then connect database
+mongoDB error fixed- downgrade mongoose npm i mongoose@8.3.4

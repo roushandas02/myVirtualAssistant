@@ -1,0 +1,21 @@
+// npm install create-vite@6.5.0
+// npm create vite@latest
+// npm install
+
+
+// npm install tailwindcss @tailwindcss/vite
+// Make plugin configurations
+// import tailwindcss from '@tailwindcss/vite'
+
+// // https://vite.dev/config/
+// export default defineConfig({
+//   plugins: [react(),tailwindcss()],
+// })
+// in index.css import it
+// @import "tailwindcss";
+
+
+//Web speech API- our speech to text
+//Gemini API - text to smart response text
+//Speech Synthesis - smart response text to speech
+
